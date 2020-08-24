@@ -1,20 +1,27 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Search symfony 5 ajax et jquery{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<div class="container">
+  <h1 class="text-center text-primary m-4">Rechercher en fonction du nom de consommateur</h1>
+  <form class=""  method="post">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Tapez des mots clés" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    
+    </div>
+  </form>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/macos/Documents/Mes-projets-dev-web/hash/has/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/macos/Documents/Mes-projets-dev-web/hash/has/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
 </div>
+
+{% endblock %}
+
+
+{% block javascripts %}
+<script type="text/javascript">
+$(document).ready(function(){
+  alert('ok');
+});
+
+</script>
 {% endblock %}
